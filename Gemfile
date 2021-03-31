@@ -1,11 +1,10 @@
 source 'http://rubygems.org'
 
-gem 'activerecord', :require => 'active_record'
-gem 'sinatra-activerecord', :require => 'sinatra/activerecord'
+gem 'activerecord'
+gem 'sinatra-activerecord'
 
 gem 'sinatra'
-gem 'sqlite3'
-gem 'tux'
+#gem 'tux'
 gem 'pry-nav'
 gem 'rake'
 gem 'rspec'
@@ -15,8 +14,9 @@ gem 'require_all'
 
 
 group :development do
+  gem 'sqlite3', '~> 1.3.6'
   gem "pry"
   gem "shotgun"
-  gem "tux"
+  #gem "tux"
   gem "capybara"
 end
